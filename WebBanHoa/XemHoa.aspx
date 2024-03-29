@@ -4,7 +4,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="noiDung" runat="server">
 
     <div class="form-inline">
-          Chọn danh mục loại <asp:DropDownList ID="ddlLoai" AutoPostBack="true" CssClass="form-control" runat="server" DataSourceID="dsLoai" DataTextField="TenLoai" DataValueField="MaLoai"></asp:DropDownList>
+          Chọn danh mục loại <asp:DropDownList ID="ddlLoai" AutoPostBack="true" CssClass="form-control" 
+              runat="server" DataSourceID="dsLoai" DataTextField="TenLoai" DataValueField="MaLoai"></asp:DropDownList>
     </div>
 
     <div class="row mt-2">
@@ -12,11 +13,11 @@
               <ItemTemplate>
                     <div class="col-md-3 text-center mb-2">
                           <a href="#">
-                              <img src="hinh_san_pham/<%# Eval("hinh") %>"  style="width:80%"  />
+                              <img src="hinh_san_pham/<%# Eval("hinh") %>" style="width:80%"  />
                           </a> <br />
                           
                            <%# Eval("TenHoa") %> <br />
-                           Giá bán : <%# Eval("gia","{0:#,##0} đồng") %> <br />      
+                           Giá bán : <span class="text-danger"><%# Eval("gia","{0:#,##0} đồng") %></span> <br />      
                         <asp:Button ID="btnAddToCart" runat="server" Text="Add To Cart" CssClass="btn btn-success" />
                     </div>
               </ItemTemplate>

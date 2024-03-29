@@ -8,12 +8,13 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    
 </head>
 <body>
     <form id="form1" runat="server">
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
             <!-- Brand/logo -->
-            <a class="navbar-brand" href="#">Shop Hoa Tươi</a>
+            <a class="navbar-brand" href="XemHoa.aspx">Shop Hoa Tươi</a>
 
             <!-- Links -->
             <ul class="navbar-nav">

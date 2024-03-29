@@ -24,6 +24,15 @@ namespace WebBanHoa
         protected global::System.Web.UI.WebControls.TextBox txtGiaTu;
 
         /// <summary>
+        /// rfvGiaTu control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvGiaTu;
+
+        /// <summary>
         /// txtGiaDen control.
         /// </summary>
         /// <remarks>
@@ -31,6 +40,24 @@ namespace WebBanHoa
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtGiaDen;
+
+        /// <summary>
+        /// rfvGiaDen control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvGiaDen;
+
+        /// <summary>
+        /// cvGia control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator cvGia;
 
         /// <summary>
         /// btnTraCuu control.
@@ -49,6 +76,15 @@ namespace WebBanHoa
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Repeater rptHoa;
+
+        /// <summary>
+        /// vsLoi control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary vsLoi;
 
         /// <summary>
         /// dsHoaTheoGia control.
