@@ -3,13 +3,14 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="noiDung" runat="server">
 
-    <div class="form-inline">
+    
+   <%-- <div class="form-inline">
           Chọn danh mục loại <asp:DropDownList ID="ddlLoai" AutoPostBack="true" CssClass="form-control" 
               runat="server" DataSourceID="dsLoai" DataTextField="TenLoai" DataValueField="MaLoai"></asp:DropDownList>
-    </div>
+    </div>--%>
 
     <div class="row mt-2">
-        <asp:Repeater ID="rptHoa" runat="server" DataSourceID="dsHoa">
+        <asp:Repeater ID="rptHoa" runat="server" DataSourceID="dsHoa" >
               <ItemTemplate>
                     <div class="col-md-3 text-center mb-2">
                           <a href="#">
@@ -18,12 +19,11 @@
                           
                            <%# Eval("TenHoa") %> <br />
                            Giá bán : <span class="text-danger"><%# Eval("gia","{0:#,##0} đồng") %></span> <br />      
-                        <asp:Button ID="btnAddToCart" runat="server" Text="Add To Cart" CssClass="btn btn-success" />
+                        <asp:Button ID="btnAddToCart" runat="server" Text="Add To Cart" CssClass="btn btn-success" OnClick="btAddToCart_Click" />
                     </div>
               </ItemTemplate>
         </asp:Repeater>
     </div>
-    
   
 
 
@@ -36,7 +36,7 @@
         ConnectionString="<%$ ConnectionStrings:HoaTuoiDBConnectionString %>" 
         SelectCommand="SELECT * FROM [Hoa] WHERE ([MaLoai] = @MaLoai)">
         <SelectParameters>
-            <asp:ControlParameter ControlID="ddlLoai" DefaultValue="1" Name="MaLoai" PropertyName="SelectedValue" Type="Int32" />
+            <asp:QueryStringParameter Name="MaLoai" QueryStringField="catid" Type="Int32" />
         </SelectParameters>
     </asp:SqlDataSource>
 </asp:Content>

@@ -69,15 +69,6 @@ namespace WebBanHoa
         protected global::System.Web.UI.WebControls.Button btnTraCuu;
 
         /// <summary>
-        /// rptHoa control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptHoa;
-
-        /// <summary>
         /// vsLoi control.
         /// </summary>
         /// <remarks>
@@ -94,5 +85,14 @@ namespace WebBanHoa
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource dsHoaTheoGia;
+
+        /// <summary>
+        /// lvHoa control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListView lvHoa;
     }
 }
