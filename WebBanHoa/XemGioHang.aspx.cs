@@ -46,8 +46,7 @@ namespace WebBanHoa
         {
             //b1. lấy mã sản phẩm cần xoá khỏi giỏ hàng và số lượng
             int masp = int.Parse(gvGioHang.DataKeys[e.RowIndex].Value.ToString());
-            int soluong =
-            int.Parse(((TextBox)gvGioHang.Rows[e.RowIndex].FindControl("txtSoLuong")).Text);
+            int soluong =int.Parse(((TextBox)gvGioHang.Rows[e.RowIndex].FindControl("txtSoLuong")).Text);
             //b2.lấy giỏ hàng từ Session
             Cart cart = (Cart)Session["CART"];
             //b3.Cập nhật lại số lượng cho sản phẩm

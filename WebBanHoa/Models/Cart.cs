@@ -44,13 +44,26 @@ namespace WebBanHoa.Models
                 };
                 //thêm vào giỏ (đề nghị sinh viên tự lập trình
                 // cho trường hợp sản phẩm đã có trong giỏ)
-                _items.Add(sp);
+                int index = findId(masp);
+                if (index == -1) //chưa có trong giỏ
+                    _items.Add(sp);
+                else
+                {  //sản phẩm đã có trong giỏ
+                    _items[index].SoLuong++;
+                }
             }
         }
         //Phương thức cập nhật số lượng,
         public void Update(int masp, int soluong)
         {
-            //tự code
+            int index = findId(masp);
+            if (index != -1) //tìm thấy
+            {
+                if (soluong > 0)
+                    _items[index].SoLuong = soluong;
+                else
+                    _items.RemoveAt(index);
+            }
         }
         //phương thức xoá sản phẩm khỏi giỏ,
         public void Delete(int masp)

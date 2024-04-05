@@ -35,10 +35,6 @@
 
                       </div>
                     </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="XemHoa.aspx">Xem hoa</a>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="TraCuu.aspx">Tra cứu</a>
                     </li>
@@ -52,22 +48,9 @@
             </div>
         </nav>
 
-        <div style="min-height:500px" class="container">
-            <div class="row">
-                <div class="col-md-2">
-                    <div class="list-group mt-3">
-                        <asp:Repeater ID="Repeater1" runat="server">
-                            <ItemTemplate>
-                                <a href="<%# Eval("MaLoai","XemHoa.aspx?catid={0}") %>"" class="list-group-item list-group-item-action">First item</a>
-                            </ItemTemplate>
-                        </asp:Repeater>
-                  </div>
-                </div>
-            </div>
-            <div class="col-md-10">
+        <div style="min-height:400px" class="container">
                 <asp:ContentPlaceHolder ID="noiDung" runat="server">
                 </asp:ContentPlaceHolder>
-            </div>
         </div>
 
         <div class="alert alert-info">
