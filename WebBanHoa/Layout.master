@@ -45,6 +45,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="ThemHoa.aspx">Thêm hoa</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="XemGioHang.aspx">Giỏ hàng</a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -65,6 +68,10 @@
                 <asp:ContentPlaceHolder ID="noiDung" runat="server">
                 </asp:ContentPlaceHolder>
             </div>
+        </div>
+
+        <div class="alert alert-info">
+            Số lượng truy cập: <asp:Label ID="lbDem" runat="server" Text="" ForeColor="#ff0000" Font-Bold="true"></asp:Label>
         </div>
 
         <div class="bg-secondary text-center text-white">

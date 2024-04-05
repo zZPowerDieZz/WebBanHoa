@@ -15,7 +15,7 @@ namespace WebBanHoa
 
         }
 
-        protected void btAddToCart_Click(object sender, EventArgs e)
+        protected void btnAddToCart_Click(object sender, EventArgs e)
         {
             //lấy mã sản phẩm từ người dùng chọn
             int MaHoa = int.Parse(((Button)sender).CommandArgument);

@@ -55,7 +55,20 @@ namespace WebBanHoa.Models
         //phương thức xoá sản phẩm khỏi giỏ,
         public void Delete(int masp)
         {
-            //tự code
+            int index = findId(masp);
+            if (index != -1)
+                _items.RemoveAt(index);
+        }
+        private int findId(int masp)
+        {
+            for (int i = 0; i < _items.Count; i++)
+            {
+                if (_items[i].MaSP == masp)
+                {
+                    return i;//tìm thấy
+                }
+            }
+            return -1;//không tìm thấy
         }
         //tính tổng thành tiền
         public int Total

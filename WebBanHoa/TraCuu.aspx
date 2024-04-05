@@ -49,6 +49,11 @@
                 <asp:Button ID="btnAddToCart" runat="server" Text="Add To Cart" CssClass="btn btn-success" />
             </div>
         </ItemTemplate>
+        <EmptyDataTemplate>                          
+                <div class="alert alert-warning">
+                     Không có dữ liệu
+                </div>                   
+            </EmptyDataTemplate>
         <LayoutTemplate>
             <div class="row">
                 <div runat="server" id="itemPlacHolder"></div>
@@ -56,14 +61,14 @@
             </div>
             <br/>
             <div class="bg-dark text-center">
-                <asp:DataPager ID="dtpage" runat="server" PagedControlID="lvHoa" PageSize="4" ClientIDMode="Static">
+                <asp:DataPager ID="dtpage" runat="server" PagedControlID="lvHoa" PageSize="6" ClientIDMode="Static">
                     <Fields>
-                        <asp:NextPreviousPagerField ButtonType="Button" ShowFirstPageButton="true" ShowPreviousPageButton="true"
-                            ShowNextPageButton="false" ButtonCssClass="prev-page text-info" />
+                        <asp:NextPreviousPagerField ButtonType="Button" ShowPreviousPageButton="true"
+                            ShowNextPageButton="false" ButtonCssClass="prev-page text-info" NextPageText="Sau" PreviousPageText="Trước"/>
                         <asp:NumericPagerField ButtonType="Button" CurrentPageLabelCssClass="btn-cur-page text-info"
                             NumericButtonCssClass="btn-num-page text-success" />
-                        <asp:NextPreviousPagerField ButtonType="Button" ShowLastPageButton="true" ShowNextPageButton="true"
-                            ShowPreviousPageButton="false" ButtonCssClass="next-page text-info" />
+                        <asp:NextPreviousPagerField ButtonType="Button"  ShowNextPageButton="true"
+                            ShowPreviousPageButton="false" ButtonCssClass="next-page text-info" NextPageText="Sau"/>
                     </Fields>
                 </asp:DataPager>
             </div>

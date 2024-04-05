@@ -13,5 +13,23 @@ namespace WebBanHoa
 
     public partial class XemGioHang
     {
+
+        /// <summary>
+        /// gvGioHang control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvGioHang;
+
+        /// <summary>
+        /// lbTongTien control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbTongTien;
     }
 }
